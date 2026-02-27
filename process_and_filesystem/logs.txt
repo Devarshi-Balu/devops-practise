@@ -1,0 +1,5 @@
+[31m This color is RED
+What is Donot forget to unset the colors with '\ e [0m' [0m this color
+[31m This is RED color [0m
+[32m This is Green color [0m
+[33m This is Yellow color [0m

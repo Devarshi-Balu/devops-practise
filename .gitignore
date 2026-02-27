@@ -1,0 +1,7 @@
+daws-88s
+Plan
+*.code-workspace
+keyPairs
+*.pem
+*.pub
+localstack
