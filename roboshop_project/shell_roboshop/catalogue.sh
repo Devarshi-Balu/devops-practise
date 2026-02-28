@@ -15,7 +15,7 @@ MONGODB_HOST=mongodb.rb.devarshi.live
 if [[ "$USERID" -ne 0 ]]; then 
     echo -e "$R Please run the script as a root user $N"; 
     exit 1
-done
+fi
 
 mkdir -p $LOGS_FOLDER
 
