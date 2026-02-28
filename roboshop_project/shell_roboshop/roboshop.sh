@@ -62,7 +62,7 @@ for instance in $@; do
                 "Changes": [{
                     "Action": "UPSERT",
                     "ResourceRecordSet": {
-                        "Name": "'$instance.$DOMAIN_NAME'",
+                        "Name": "'$instance.rb.$DOMAIN_NAME'",
                         "Type": "A",
                         "TTL": 1,
                         "ResourceRecords": [{"Value": "'$PUBLIC_IP'"}]
@@ -76,5 +76,5 @@ for instance in $@; do
     # echo "Waiting for DNS change to sync..." ;
     # aws route53 wait resource-record-sets-changed --id "$CHANGE_ID" ;
 
-    echo "Deployment complete. $instance.$DOMAIN_NAME → $PUBLIC_IP" ; 
+    echo "Deployment complete. $instance.rb.$DOMAIN_NAME → $PUBLIC_IP" ; 
 done

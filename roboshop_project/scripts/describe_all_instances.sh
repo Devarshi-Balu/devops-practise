@@ -6,8 +6,12 @@ export AWS_PROFILE="deva"
 
 # the above command may result in a error, due unflattened arrays
 
-
+echo "Running Instances" 
 aws ec2 describe-instances \
   --query "Reservations[].Instances[] | [?State.Name=='running'].{InstanceId: InstanceId, PublicIP: PublicIpAddress, State: State.Name}" \
   --output table
 
+echo "All Instances" 
+aws ec2 describe-instances \
+  --query "Reservations[].Instances[].{InstanceId: InstanceId, PublicIP: PublicIpAddress, State: State.Name}" \
+  --output table
