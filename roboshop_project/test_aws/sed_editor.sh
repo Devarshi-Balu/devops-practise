@@ -1,0 +1,1 @@
+sed '/protected-mode/c protected-mode no' ./text.txt

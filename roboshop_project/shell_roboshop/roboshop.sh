@@ -37,6 +37,7 @@ for instance in $@; do
                         --instance-type t3.micro \
                         --security-groups $SECURITY_GROUPS \
                         --count 1 \
+                        --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$instance}]" \
                         --query "Instances[].InstanceId" \
                         --output text 
                 )

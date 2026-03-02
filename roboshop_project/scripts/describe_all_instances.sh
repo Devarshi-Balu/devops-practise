@@ -13,5 +13,5 @@ aws ec2 describe-instances \
 
 echo "All Instances" 
 aws ec2 describe-instances \
-  --query "Reservations[].Instances[].{InstanceId: InstanceId, PublicIP: PublicIpAddress, State: State.Name}" \
+  --query "Reservations[].Instances[].{InstanceId: InstanceId, PublicIP: PublicIpAddress, State: State.Name, Name: Tags[?Key=='Name'].Value | [0]}" \
   --output table

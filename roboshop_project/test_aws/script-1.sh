@@ -1,0 +1,5 @@
+echo "script-1 \$0 = $0" 
+echo "script-1 \$PWD = $PWD"
+DIRNAME="$(dirname "$0")"
+bash "$(dirname $0)/../script-2.sh"
+bash "~"
