@@ -1,0 +1,27 @@
+- name: play-1 
+  hosts: 100.28.226.172
+  become: yes 
+  vars: 
+    var1: "Play level varaible-1"
+    ansible_user: ec2-user
+    ansible_password: DevOps321
+  vars_files:
+    - "../variables.yaml"
+  
+  tasks: 
+    - name: task-1 
+      ansible.builtin.command: 
+        id roboshop 
+      ignore_errors: true
+      register: user_check_output
+
+    - name: adding user roboshop
+      ansible.builtin.command: useradd -m -d /app -s /bin/bash --system roboshop --comment "system user for roboshop project"
+      when: user_check_output.failed 
+      register: useradd_command
+
+    - name: debugging 
+      ansible.builtin.debug: 
+        msg: 
+          useradd_command: "{{ useradd_command }}"          
+

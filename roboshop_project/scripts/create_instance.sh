@@ -14,6 +14,7 @@ INSTANCE_ID=$( aws ec2 run-instances \
                     --instance-type t3.micro \
                     --security-groups "$SECURITY_GROUPS" \
                     --count 1 \
+                    --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$1}]"
                     --key-name key-1 \
                     --query "Instances[].InstanceId" \
                     --output text

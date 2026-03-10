@@ -1,0 +1,31 @@
+- name: Play-1
+  hosts: db
+  become: yes
+  vars: 
+    ansible_user: ec2-user
+    ansible_password: DevOps321
+    packages: 
+      - nginx
+      - git 
+      - rclone
+  tasks: 
+    - name: "Installing the packages"
+      ansible.builtin.package: 
+        name: "{{ packages }}"
+        state: present
+    
+    - name: "pinging the server"
+      ansible.builtin.ping: 
+      register: ping_result
+    
+    - name: Debugging the ping
+      debug: 
+        msg: "The server is reachable"
+      when: ping_result.ping == "pong" 
+
+    - name: "starting the nginx service"
+      ansible.builtin.service: 
+        name: nginx
+        state: started
+        enabled: yes
+      

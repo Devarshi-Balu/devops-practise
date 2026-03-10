@@ -5,3 +5,6 @@ keyPairs
 *.pem
 *.pub
 localstack
+*.zip
+*.tar
+*.tar.gz

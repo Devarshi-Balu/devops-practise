@@ -1,0 +1,21 @@
+# play-1
+- name: "Pinging the server"
+  hosts: web
+  become: yes # run ad sudo user
+  vars: 
+    packages:  # variable - packages: list of packages
+      - nginx
+      - openssh-server
+      - git
+    ansible_user: ec2-user
+    ansible_password: DevOps321
+  tasks:
+    - name: Ping the server
+      ansible.builtin.ping:
+      register: ping_result
+
+    - name: "Debugging"
+      debug: 
+        msg: "Printing only when the server is pinged"
+      when: ping_result.ping == "pong"
+    

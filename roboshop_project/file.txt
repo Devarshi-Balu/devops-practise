@@ -1,0 +1,368 @@
+/
+├── Aadhaar card
+│   ├── Devarshi Balu
+│   │   ├── AdhaarCard_Devarshi Balu_original_hardcopy.pdf
+│   │   ├── Masked aadhar - Devarshi.pdf
+│   │   ├── Updated aadhar -Devarshi Balu.pdf
+│   │   ├── Updated aadhar -Devarshi Balu_compressed.pdf
+│   │   ├── adhaar-me - previous.pdf
+│   │   └── ec23b1006.pdf
+│   └── Parents
+│       ├── Aadhar card - father.pdf
+│       └── adhaar-mother.pdf
+├── Class 10
+│   ├── 10 th marklist.pdf
+│   ├── Class_10_Marklist_original_(Marks-new).pdf
+│   ├── Tc-10th class .pdf
+│   └── study certificate 10th.pdf
+├── Devarshib05(1).docx
+├── Devarshib05.docx
+├── Govt side certificates
+│   ├── Birth certificate.pdf
+│   ├── Income certificate (2022-2023).pdf
+│   ├── Income_certificates
+│   │   ├── 2022-23 (Financial_year)
+│   │   │   ├── Copy of income_Affidavit_Devarshi.pdf
+│   │   │   ├── Income certificate (2022-2023)-2 pages-compressed.pdf
+│   │   │   └── Income certificate (2022-2023)-2 pages.pdf
+│   │   └── 2023-24(Financial Year)
+│   │       ├── Income affidavit _23_24.pdf
+│   │       └── income_certificate _ digital_print.pdf
+│   ├── Ration card .jpg
+│   ├── caste and nativity certificate.pdf
+│   ├── caste certificate _ printed.pdf
+│   └── caste_certificate_printed_compressed.pdf
+├── JEE
+│   ├── JEE 2022 registration
+│   │   ├── ConfirmationPage-220310110191.pdf
+│   │   ├── JEE-reg-NEW.jpg
+│   │   ├── NTA response sheet.pdf
+│   │   ├── Passport size photo-v2.jpg
+│   │   ├── Passport size photo.jpg
+│   │   ├── application form number .png
+│   │   ├── deva sign.jpg
+│   │   ├── fee payment pop up .png
+│   │   ├── jee reg pic .jpg
+│   │   ├── photo and signature .png
+│   │   ├── result jee main(1).pdf
+│   │   ├── result jee main.pdf
+│   │   └── screen shot of instructions.jpeg
+│   └── JEE2023
+│       ├── CSAB
+│       │   ├── CSAB schedule.pdf
+│       │   ├── Fee types.pdf
+│       │   ├── Hostel_google_form_response_print.pdf
+│       │   ├── NIT_puducherry - Shortcut.lnk
+│       │   ├── Provisional seat allotment letter _ CSAB
+│       │   │   └── PSAL(csab)_provisional seat allotment letter.pdf
+│       │   ├── information Brochure _csab _2023.pdf
+│       │   ├── locked_choices_letter_csab.pdf
+│       │   ├── passport size image.jpg
+│       │   ├── special round 2
+│       │   └── special_round_1
+│       │       └── intial intimation slip.pdf
+│       ├── JOSAA
+│       │   ├── Counselling process
+│       │   │   ├── Fee payment reciept.pdf
+│       │   │   ├── Provisional Seat allotment letter
+│       │   │   │   └── Provisional Seat allotment_letter.pdf
+│       │   │   ├── Seat acceptance Letter cum _ Fee payment proof_document verification_letter.pdf
+│       │   │   ├── filled choices print.pdf
+│       │   │   ├── round 1
+│       │   │   │   ├── Provisional seat allotment letter.pdf
+│       │   │   │   └── round 1 - intimation slip.pdf
+│       │   │   ├── round 2
+│       │   │   │   └── seat allotment intimation_slip.pdf
+│       │   │   ├── round 3
+│       │   │   │   └── intial intimation slip.pdf
+│       │   │   ├── round 4
+│       │   │   │   └── intial intimation slip.pdf
+│       │   │   ├── round 5
+│       │   │   │   └── Intial intimation slip -round5.pdf
+│       │   │   └── round 6
+│       │   │       └── intial intimation slip - round 6.pdf
+│       │   ├── Medical certificate format.pdf
+│       │   ├── NIT_puducherry
+│       │   │   ├── Academic calendar .pdf
+│       │   │   ├── Admission_reporting_date_NIT_PUDUCHERRY.pdf
+│       │   │   ├── Btech admission process.pdf
+│       │   │   ├── Fee remission .pdf
+│       │   │   ├── Fee-remission _NIT_Puducherry.pdf
+│       │   │   ├── Form-Y.pdf
+│       │   │   ├── Hostel circular _ 2022-2023.pdf
+│       │   │   ├── Hostel_google_form_response_print.pdf
+│       │   │   └── Payment Proof Hostel FEE - Google Docs.pdf
+│       │   ├── Reference_income_affidavit.pdf
+│       │   ├── compressed_pdf_JOSAA
+│       │   │   ├── 10 th marklist-compressed.pdf
+│       │   │   ├── Inter-Marklist_original_no effects_2 pages-compressed.pdf.pdf
+│       │   │   ├── class 10 marklist - new compressed.pdf
+│       │   │   └── med_certificate_devarshi_compressed.pdf
+│       │   ├── information bulletin.pdf
+│       │   ├── installation guide - delta batch.pdf
+│       │   ├── josaa business rules.pdf
+│       │   ├── josaa schedule.pdf
+│       │   └── medical certificate _ Devarshi_josaa.pdf
+│       ├── NIT_puducherry_reporting
+│       │   ├── Admission acknowledgement slip.pdf
+│       │   ├── Admit_Cards
+│       │   │   ├── admit card -2023JEE M-s1.pdf
+│       │   │   └── admit card -2023JEE M-s2.pdf
+│       │   ├── Class_10_Marklist_original_(Marks-new).pdf
+│       │   ├── Document verification Letter Josaa+CSAB.pdf
+│       │   ├── Hostel Fee payment _ NIT-py_chief_warden.jpg
+│       │   ├── Hostel Forms
+│       │   │   ├── Academic calendar .pdf
+│       │   │   ├── Admission_reporting_date_NIT_PUDUCHERRY.pdf
+│       │   │   ├── Btech admission process.pdf
+│       │   │   ├── Hostel circular _ 2022-2023.pdf
+│       │   │   └── Hostel_forms_pdf_printOut_to_be_submitted.pdf
+│       │   ├── Hostel_google_form_response_print.pdf
+│       │   ├── Inter-Marklist_original.pdf
+│       │   ├── Migration_certificate_devarshi_BIEAP_.pdf
+│       │   ├── NTA _ Score card.pdf
+│       │   ├── PSAL(csab)_provisional seat allotment letter.pdf
+│       │   ├── Payment Proof Hostel FEE - Google Docs.pdf
+│       │   ├── Provisional Seat allotment letter_JOSAA.pdf
+│       │   ├── e-samarth .NITPY form.pdf
+│       │   ├── medical certificate _ Devarshi_josaa.pdf
+│       │   ├── passport size image.jpg
+│       │   └── samarth e gov form
+│       │       ├── Admission acknowledgement slip.pdf
+│       │       ├── e-samarth .NITPY form.pdf
+│       │       └── samarth-e-gov Form filling.pdf
+│       ├── charan sai
+│       │   ├── Session 1 - result -2023 - charan sai.pdf
+│       │   ├── city intimation -session 2 - charan sai.pdf
+│       │   ├── jee_Main_-_2nd_session_Confirmation[1]-charan sai.pdf
+│       │   └── session2 final NTA score.pdf
+│       ├── devarshi balu
+│       │   ├── NTA - final circular -NTA score.pdf
+│       │   ├── admit cards
+│       │   │   ├── admit card -2023JEE M-s1.pdf
+│       │   │   └── admit card -2023JEE M-s2.pdf
+│       │   ├── city intimations
+│       │   │   ├── city intimation-2.pdf
+│       │   │   └── session 2 intimation of exam date and city.pdf
+│       │   ├── confirmation page
+│       │   │   ├── ConfirmationPage-230310119619-session 1.pdf
+│       │   │   └── NTA - JEE(Main) 2023 - Session 2 0119619 Confirmation Page - session 2.pdf
+│       │   ├── photo and signature
+│       │   │   ├── compressed.jpg
+│       │   │   ├── deva sign.jpg
+│       │   │   └── photo and signature .png
+│       │   ├── results
+│       │   │   ├── session 1
+│       │   │   │   ├── final answer keys-s1.pdf
+│       │   │   │   ├── respose sheet - 31 jan 2023.pdf
+│       │   │   │   └── session-1 result.pdf
+│       │   │   └── session2
+│       │   │       ├── Session 2 + final NTA score.pdf
+│       │   │       └── response sheet.pdf
+│       │   └── sharing sheet
+│       │       ├── __Session 2 + final NTA score.pdf
+│       │       └── _result jee main-2022.pdf
+│       ├── imp documents for josaa
+│       │   ├── Latest_Circular_2022-23_reporting_web upload.pdf
+│       │   ├── Medical.pdf
+│       │   └── medical certificate -print out paper .pdf
+│       └── jee 2022 result
+│           ├── jee 2022 result.pdf
+│           └── result jee main.pdf
+├── Laptop credentials
+│   ├── invoice laptop.pdf
+│   ├── my windows product Key.docx
+│   └── serial number.docx
+├── NIT_puducherry
+│   ├── FFE
+│   │   ├── House tour FFE.mp4
+│   │   ├── House tour FFE_mini format.mp4
+│   │   ├── Laptop declaration form.pdf
+│   │   ├── parent declaration.pdf
+│   │   ├── parents_declaration_signed pdf.pdf
+│   │   ├── year _ 2
+│   │   │   └── fee reciepts to be submitted
+│   │   │       └── Fee reciepts for FFE .pdf
+│   │   └── year_3
+│   │       ├── Fee reciepts ffe 2025_2026.pdf
+│   │       └── Report to Facilitator _ FFE.pdf
+│   ├── FFE_fee payment details.pdf
+│   ├── Fee remession _ list of students and fee rem amount .pdf
+│   ├── Fee remission list _ 2024_28 batch Btech.pdf
+│   ├── Full_time_college_student
+│   │   ├── Btech_23_27 student details
+│   │   │   └── Fee remission Btech_23_27.pdf
+│   │   ├── Fee Remission
+│   │   │   └── Academic_Year_2025_26
+│   │   │       ├── FORM_Y.docx
+│   │   │       ├── FORM_Y.pdf
+│   │   │       ├── Fee remession circular for Ac_year 25_26 circulated on March_25.pdf
+│   │   │       └── Note.txt.docx
+│   │   ├── Fee remession _ list of students and fee rem amount .pdf
+│   │   ├── Hostel affairs
+│   │   │   ├── Hostel Fee payment Proofs
+│   │   │   │   ├── Hostel Fee payment proof - semester 2 .pdf
+│   │   │   │   ├── Hostel Fee payment proof - semester 3.pdf
+│   │   │   │   ├── Hostel Fee payment proof - semester 4.pdf
+│   │   │   │   ├── Hostel Fee payment proof - semester 5.pdf
+│   │   │   │   └── desktop.ini
+│   │   │   ├── Hostel_fee circular
+│   │   │   │   ├── sem_3 Hostel Fee circuular .pdf
+│   │   │   │   └── sem_5_hostel_fee circular.pdf
+│   │   │   ├── Semester _ 3
+│   │   │   │   ├── Hostel Fee payment proof - semester 3.pdf
+│   │   │   │   └── sem_3 Hostel Fee circuular .pdf
+│   │   │   ├── semester - 2
+│   │   │   │   ├── Circular - Hostel Fee- Even semester of the AY 23-24.pdf
+│   │   │   │   └── Hostel Fee payment proof - semester 2 .pdf
+│   │   │   └── semester_5
+│   │   │       └── Hostel_fee_reciept_sem_5.pdf
+│   │   ├── Income certificate and Affidavit
+│   │   │   ├── acad_year_2025_2026
+│   │   │   │   ├── Form_Edited_version.docx
+│   │   │   │   └── Instructions.docx
+│   │   │   └── income certificate 2024_25
+│   │   │       └── Instructions_income_certificate.docx
+│   │   ├── Semester Fee reciepts
+│   │   │   └── sem_5_ fee _institute_and_tution_fee.pdf
+│   │   ├── Semester Results
+│   │   │   ├── Results
+│   │   │   │   ├── year_1
+│   │   │   │   │   ├── Sem_1 gradecard.pdf
+│   │   │   │   │   ├── Sem_1 sem_2 gradecard_merged.pdf
+│   │   │   │   │   └── sem_2 Gradecard.pdf
+│   │   │   │   ├── year_2
+│   │   │   │   │   ├── sem_3_gradecard.pdf
+│   │   │   │   │   ├── sem_3_sem_4_gradecard_merged.pdf
+│   │   │   │   │   └── sem_4_gradecard.pdf
+│   │   │   │   └── year_3
+│   │   │   │       └── sem_5
+│   │   │   │           └── sem_5_Grade_card.pdf
+│   │   │   ├── Sem_1 _ Results.pdf
+│   │   │   └── original marksheets
+│   │   │       └── year_1
+│   │   │           ├── grade_Card___Year__1_(_sem_1).pdf
+│   │   │           ├── grade_Card___Year__1_(_sem_1_+_sem_2_).pdf
+│   │   │           └── grade_Card___Year__1_(_sem_2).pdf
+│   │   ├── Year_2
+│   │   │   ├── Semester Fee circular for the ODD semester of the Academic year 2024-25.pdf
+│   │   │   ├── college_tuition fee reciepts
+│   │   │   │   └── sem_3 institute fee reciept.pdf
+│   │   │   └── institute fee structure AC_23_24_UG_programme.pdf
+│   │   └── identity card
+│   │       ├── Id_card_jpeg_format
+│   │       │   ├── back_face.jpg
+│   │       │   ├── front_face.jpg
+│   │       │   └── id_card_full_front_and_back.jpg
+│   │       └── college_identity_card .pdf
+│   ├── HOstel fee structure UG_first_year NIT py.pdf
+│   ├── Relaince Scholarship
+│   │   ├── Award letter
+│   │   │   ├── RFSCH231000360811.pdf
+│   │   │   └── singned_award_letter.pdf
+│   │   ├── Bonafide_Balu-Devarshi.pdf
+│   │   ├── PDFReview_details_RF scholarship.pdf
+│   │   ├── Second year
+│   │   │   ├── Grade cards combined
+│   │   │   │   └── Sem_1 sem_2 gradecard_merged.pdf
+│   │   │   └── RFscholarship_report by HOD for second year claim.pdf
+│   │   ├── Third year
+│   │   │   ├── HodReportRelaince2526.pdf
+│   │   │   ├── year2GradeCardsAlongWithIDCard.pdf
+│   │   │   └── year_2_grade_cards_along_with_ID_card.pdf
+│   │   └── college_identity_card.pdf
+│   ├── course registration form _submit.pdf
+│   ├── institute fee structure
+│   │   ├── Semester Fee circular for the ODD semester of the Academic year 2024-25.pdf
+│   │   ├── institute fee structure AC_23_24_UG_programme.pdf
+│   │   └── institute fee structure AC_24_25_UG_programme.pdf
+│   ├── nsp scholarship
+│   │   ├── Apllication form.pdf
+│   │   └── OTR NSP.docx
+│   └── samarth_course_registration_pdf.pdf
+├── Pan cards
+│   ├── Pan Card -orginal-Devarshi Balu.pdf
+│   ├── Pan card _ father.pdf
+│   ├── pan card - mother.pdf
+│   ├── pan card-Devarshi.pdf
+│   └── pancard_DevarshiBalu_jpg format.jpg
+├── SBI new passbook_compressed(1).pdf
+├── SBI new passbook_compressed.pdf
+├── account details
+│   ├── Account_details_pdf_account_statement.pdf
+│   ├── Bank-passbook-SBI-KB(RR-complex).pdf
+│   ├── SBI new passbook.pdf
+│   ├── SBI new passbook_compressed.pdf
+│   ├── account_statement_02_06_25.pdf
+│   └── account_statements
+│       ├── all transactions
+│       │   ├── account_statement_fy_23_24.pdf
+│       │   ├── account_statement_fy_24_25.pdf
+│       │   └── account_statement_fy_25_so_on.pdf
+│       └── financial_years
+│           ├── account_statement_fy_23_24.pdf
+│           └── account_statement_fy_24_25.pdf
+├── aws
+│   └── rootkey.csv
+├── devendra
+│   ├── Dev_ 10th.pdf
+│   ├── Devendra
+│   │   ├── ee23b1052.jpg
+│   │   └── ee23b1052_ps.jpg
+│   ├── Parent_s or Guardian_s Declaration (1)_signed.pdf
+│   ├── Passbook.pdf
+│   ├── WhatsApp Image 2023-09-05 at 12.07.02.jpg
+│   ├── adhaar.pdf
+│   ├── akka passbook.pdf
+│   ├── class 12 marks sheet .pdf
+│   ├── course selection NITPY.pdf
+│   ├── hostel fees .pdf
+│   ├── income certificate .pdf
+│   ├── income certificate _compressed.pdf
+│   ├── merge tution + hostel fee.pdf
+│   ├── score card .pdf
+│   └── seat allotment letter .pdf
+├── ec23b1006_ps.jpg
+├── ec23b1006_signature(1).jpg
+├── ec23b1006_signature.jpg
+├── electricity Bills
+│   ├── 25-05-2024
+│   │   ├── Bill Numbers.docx
+│   │   ├── Farm_bill_020_25-05-2024.pdf
+│   │   ├── Farm_bill_213_25-05-2024.pdf
+│   │   └── home.pdf
+│   ├── Bill Numbers.docx
+│   ├── Meter numbers.pdf
+│   └── servivce number 4 _ agriculture .png
+├── inter
+│   ├── Inter practical Hall tickets
+│   │   ├── Abhiram sai.do
+│   │   └── Devarshi balu.do
+│   └── certificates
+│       ├── Inter-Marklist_original.pdf
+│       ├── Inter-Marklist_original_no effects_2 pages.pdf
+│       ├── Migration Certificate.pdf
+│       ├── Migration_certificate_devarshi_BIEAP_.pdf
+│       ├── Tc -ss- inter.pdf
+│       ├── inter marklist.pdf
+│       ├── inter result - second year.pdf
+│       └── study certificate inter.pdf
+├── pan, Masked adhaar, photo . Devarshi Balu (1).pdf
+├── passport_size_img_Devarshi Balu(1).jpg
+├── passport_size_img_Devarshi Balu.jpg
+├── passport_size_img_Devarshi Balu_compressed(1).jpg
+├── passport_size_img_Devarshi Balu_compressed.jpg
+├── photo_passport size.pdf
+├── photo_signature
+│   ├── Devendra
+│   │   ├── ee23b1052.jpg
+│   │   └── ee23b1052_ps.jpg
+│   └── devarshi
+│       ├── ec23b1006_ps.jpg
+│       └── ec23b1006_signature.jpg
+├── proofs unacademy subscription(1).pdf
+├── proofs unacademy subscription.pdf
+├── sri rama navami - 2023 (1).jpg
+└── sri rama navami - 2023 .jpg
+
+97 directories, 268 files

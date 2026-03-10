@@ -1,0 +1,1 @@
+../../process_and_filesystem/install.sh.log ../../process_and_filesystem/log-1.1.log ../../process_and_filesystem/log-1.log ../../roboshop_project/logs_management/deva.log ../../roboshop_project/logs_management/logs01.log ../../roboshop_project/logs_management/logs02.log
