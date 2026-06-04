@@ -19,3 +19,5 @@
         msg: "Printing only when the server is pinged"
       when: ping_result.ping == "pong"
     
+
+    

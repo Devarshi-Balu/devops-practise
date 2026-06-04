@@ -10,7 +10,7 @@ INSTANCE_IDS=$(aws ec2 run-instances \
                     --image-id $IMAGE_ID \
                     --instance-type t3.micro \
                     --security-groups $SECURITY_GROUPS \
-                    --count 2 \
+                    --count 1 \
                     --query 'Instances[].InstanceId' \
                     --output text
 )
