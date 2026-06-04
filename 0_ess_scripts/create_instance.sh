@@ -5,36 +5,29 @@ trap 'echo "Error with the command at command: $BASH_COMMAND, line_number: $LINE
 export AWS_PROFILE="deva"
 
 IMAGE_ID="ami-0220d79f3f480ecf5"
-SECURITY_GROUPS="Security-Group-1" 
+SECURITY_GROUPS="sg1" 
 DOMAIN_NAME="devarshi.live"
 ZONE_ID="Z06569691EDOCEFWDOVQV"
 
-INSTANCE_ID=$( aws ec2 run-instances \
-                    --image-id $IMAGE_ID \
-                    --instance-type t3.micro \
-                    --security-groups $SECURITY_GROUPS \
-                    --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$1}]"\
-                    --count 1 \
-                    --query "Instances[].InstanceId" \
-                    --output text
-            )
-
-PUBLIC_IP=""
-
-for x in {1..10}; do 
-    PUBLIC_IP=$( aws ec2 describe-instances \
-                        --instance-ids "$INSTANCE_ID" \
-                        --query "Reservations[].Instances[].PublicIpAddress" \
+read -r INSTANCE_ID PRIVATE_IP < <( 
+                    aws ec2 run-instances \
+                        --image-id $IMAGE_ID \
+                        --instance-type t3.micro \
+                        --security-groups $SECURITY_GROUPS \
+                        --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$1}]"\
+                        --count 1 \
+                        --query "Instances[].[InstanceId, PrivateIpAddress]" \
                         --output text
                 )
 
-    if [[ -n "$PUBLIC_IP" && "$PUBLIC_IP" != "None" ]]; then 
-        break; 
-    fi
+aws ec2 wait instance-running --instance-ids $INSTANCE_ID
 
-    sleep 2
-done
-
+PUBLIC_IP=$(
+    aws ec2 describe-instances \
+        --instance-ids $INSTANCE_ID \
+        --query "Reservations[0].Instances[0].PublicIpAddress" \
+        --output text
+)
 
 if [[ -z "$PUBLIC_IP" || "$PUBLIC_IP" == "None" ]]; then 
     echo "failed assign the public Ip address, exiting the script" 
@@ -44,4 +37,6 @@ if [[ -z "$PUBLIC_IP" || "$PUBLIC_IP" == "None" ]]; then
     exit 1 
 fi
 
-echo "Instance created with the Instance-Id: $INSTANCE_ID, PublicIpAddress: $PUBLIC_IP" 
+echo "Instance created with the Instance-Id: $INSTANCE_ID"
+echo "PublicIpAddress: $PUBLIC_IP"
+echo "PrivateIpAddress: $PRIVATE_IP"
