@@ -14,5 +14,5 @@ export AWS_PROFILE="deva"
 echo "Displaying All Instances including Not stopped and Terminated" 
 
 aws ec2 describe-instances \
-  --query "Reservations[].Instances[].{InstanceId: InstanceId, PublicIP: PublicIpAddress, State: State.Name, Name: Tags[?Key=='Name'].Value | [0]}" \
+  --query "Reservations[].Instances[].{InstanceId: InstanceId, PublicIP: PublicIpAddress, PrivateIp: PrivateIpAddress, State: State.Name, Name: Tags[?Key=='Name'].Value | [0]}" \
   --output table

@@ -8,3 +8,5 @@ localstack
 *.zip
 *.tar
 *.tar.gz
+
+*.pdf
