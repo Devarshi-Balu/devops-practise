@@ -1,0 +1,36 @@
+- name: play-1
+  hosts: localhost 
+  connection: local
+  become: yes
+  vars: 
+    packages: 
+      - nginx 
+      - mysql 
+      - zip
+  
+  tasks: 
+    - name: installing packages
+      ansible.builtin.package: 
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+
+      loop: 
+        - {name: nginx, state: present}
+        - {name: mysql, state: absent}
+        - {name: zip, state: present}
+
+      register: package_install_output 
+
+    - name: enablign the nginx server 
+      ansible.builtin.service: 
+        name: nginx
+        state: started 
+        enabled: yes
+      register: service_output
+
+    - name: Debugging 
+      ansible.builtin.debug: 
+        msg: 
+          service_output: "{{service_output}}"
+          package_install_output: "{{package_install_output}}"
+          

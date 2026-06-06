@@ -1,0 +1,14 @@
+- name: play-1 
+  hosts: localhost
+  connection: local
+  vars:
+    Name: Devarshi
+  tasks: 
+    - name: Testing the loops 
+      ansible.builtin.debug: 
+        msg: "{{item}}"
+      loop: 
+        - value-1
+        - value-2
+        - value-3
+        - value-4

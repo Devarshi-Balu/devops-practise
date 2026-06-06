@@ -1,0 +1,21 @@
+- name: play-1
+  hosts: localhost
+  connection: local
+  vars:
+    family: Debian
+  tasks: 
+    - name: normal commands
+      ansible.builtin.command: 
+        echo "hello world - 1" ;
+      register: command_output
+
+    - name: shell commands
+      ansible.builtin.shell: |
+        echo "Hello from the shell commands" | cat > /dev/null ;
+      register: shell_command_ouput  # the variables are stored at the playlevel
+
+    - name: debugging
+      ansible.builtin.debug: 
+        msg: 
+          command_output: "{{ command_output }}"
+          shell_command_ouput: "{{ shell_command_ouput }}"

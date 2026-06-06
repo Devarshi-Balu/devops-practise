@@ -1,0 +1,40 @@
+- name: play-1 
+  hosts: local
+  connection: local
+  vars: 
+    name: Devarshi Balu
+    age: 20 
+    hobbies: 
+      - Cyclcing
+      - Reading
+      - Running
+  vars_files: 
+    - variables.yaml
+    - variables_2.yaml
+  # vars_prompt:
+  #   - name: AGE 
+  #     prompt: Please enter your age
+  #     private: false
+  #   # - name: NICK_NAME 
+  #   #   prompt: Please enter your nickname
+  #     # private: false
+  #   - name: password
+  #     prompt: Please enter you password
+  #     private: true 
+  tasks: 
+    - name: printing the ansible_facts
+      debug: 
+        msg: "{{ansible_facts}}"
+
+    - name: checking the os_family
+      debug: 
+        msg: |
+          "This belongs to RedHat family"
+      when: ansible_facts.os_family == "RedHat"
+
+    - name: Checking the osFamily
+      debug: 
+        msg: This belong to the Debian Family
+      when: ansible_facts.os_family == "Debian"
+
+

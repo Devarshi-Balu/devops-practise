@@ -1,0 +1,46 @@
+- name: play-1
+  hosts: localhost
+  connection: local
+  vars: 
+    tags: 
+      name: playbook
+      project: roboshop 
+      version: 1.0.2
+    packages: nginx, zip, rclone
+    users: 
+      - ram
+      - jatin
+      - DevarshiBalu
+    tagsList: [
+      {
+        "key": "name",
+        "value": "playbook"
+      },
+      {
+          "key": "project",
+          "value": "roboshop"
+      },
+      {
+          "key": "version",
+          "value": "1.0.2"
+      }
+    ]
+
+    play_book_1: "{{ lookup('file', '02-playbook.yaml') | from_yaml }}"  # lookup function is used to read the files {{  lookup('file', 'path') | from_yaml }}
+  tasks: 
+    - name: task-1
+      ansible.builtin.debug: 
+        msg: 
+          split_output: "{{packages | split(',')}}"
+          list_to_string: "{{ users | join('/') }}"
+          dict_to_list: "{{ tags | dict2items }}"
+          list_to_dict: "{{ tagsList | items2dict }}"
+
+    # - name: task-2 
+    #   ansible.builtin.set_fact: 
+    #     play_book_1: "{{ lookup('file', '02-playbook.yaml') | from_yaml }}"
+    
+    - name: task-3 
+      ansible.builtin.debug: 
+        msg: 
+          play_book_1_json: "{{ play_book_1 }}" # no need to print {{var | to_json}} # this prints in json 

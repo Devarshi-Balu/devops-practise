@@ -1,0 +1,15 @@
+- name: Play-1
+  hosts: localhost
+  # become: yes 
+  vars: 
+    ip: "255.35.256.78"
+    yaml_file: "{{ lookup('file', '../01-playblook.yaml') | from_yaml }}"
+
+  tasks: 
+    - name: task1 
+      ansible.builtin.debug:
+        msg: 
+          01_output_name: "checking if the ip is a valid ipv4 address"
+          02_isIpv4: "{{ip | ansible.utils.ipv4}}"
+          # ansible_facts: "{{ansible_facts}}"
+          yaml_file: "{{ yaml_file }}"

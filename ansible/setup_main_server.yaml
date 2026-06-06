@@ -1,0 +1,41 @@
+- name: setup main server for ansible runs 
+  hosts: mainserver
+  gather_facts: false
+  vars: 
+    ansible_user: ec2-user
+    ansible_password: DevOps321
+
+  become: true
+  tasks: 
+    - name: Ensure pip and system dependencies are installed
+      ansible.builtin.dnf:  # Use apt for Ubuntu/Debian
+        name: 
+          - python3-pip
+          - python3-devel
+          - ansible
+        state: present
+
+    - name: installing awscli and other ansible dependicies
+      ansible.builtin.pip:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - pymysql
+        - cryptography
+        - ansible 
+        - awscli 
+        - boto3
+      
+    - name: install mysql collection
+      ansible.builtin.command: ansible-galaxy collection install ansible.mysql --force
+      
+    - name: create .aws folder
+      ansible.builtin.copy: 
+        src: /home/devarshi_balu/.aws/
+        dest: /home/ec2-user/.aws/
+        owner: ec2-user
+        group: ec2-user
+      
+      
+
+        
