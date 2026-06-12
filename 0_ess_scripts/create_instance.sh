@@ -37,6 +37,36 @@ if [[ -z "$PUBLIC_IP" || "$PUBLIC_IP" == "None" ]]; then
     exit 1 
 fi
 
+record="$1.devarshi.live"
+echo "updating the dns record with the given instance_name: "
+
+aws route53 change-resource-record-sets \
+  --hosted-zone-id $ZONE_ID \
+  --change-batch "$( jq -n \
+                        --arg record $record \
+                        --arg ip $PUBLIC_IP \
+                        '
+                            {
+                                Comment: "Upserting an record for the domain",
+                                Changes: [
+                                    {
+                                    Action: "UPSERT",
+                                    ResourceRecordSet: {
+                                        Name: $record,
+                                        Type: "A",
+                                        TTL: 300,
+                                        ResourceRecords: [
+                                        {
+                                            Value: $ip
+                                        }
+                                        ]
+                                    }
+                                    }
+                                ]
+                            }
+                        '
+                )"
+
 echo "Instance created with the Instance-Id: $INSTANCE_ID"
 echo "PublicIpAddress: $PUBLIC_IP"
 echo "PrivateIpAddress: $PRIVATE_IP"
