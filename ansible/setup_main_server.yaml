@@ -58,5 +58,27 @@
         owner: ec2-user
         group: ec2-user
         mode: '0600'
+     
 
-        
+    - name: Remove old repository
+      ansible.builtin.file:
+        path: /home/ec2-user/roboshop-ansible
+        state: absent
+    
+    - name: Clone roboshop repo
+      become_user: ec2-user
+      ansible.builtin.git:
+        repo: https://github.com/devarshi-balu/roboshop-ansible
+        dest: /home/ec2-user/roboshop-ansible
+      register: repo_clone_output
+
+    - name: printing the output of the repo clone 
+      ansible.builtin.debug:
+        var: repo_clone_output
+  
+    - name: run the roboshop script on the remote server 
+      become_user: ec2-user
+      ansible.builtin.shell: 
+        cmd: bash "/home/ec2-user/roboshop-ansible/roboshop.sh"
+      args: 
+        chdir: "/home/ec2-user/roboshop-ansible/"

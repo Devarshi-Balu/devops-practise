@@ -1,0 +1,26 @@
+- name: checking for the aws ssm parameters 
+  hosts: local
+  connection: local
+  vars: 
+    ansible_password: devarshi     
+    ansible_python_interpreter: /usr/bin/python3.10     
+  become: true
+  tasks: 
+    - name: fetch the roboshop/mysql/rootpass parameter
+      ansible.builtin.debug: 
+        msg: 
+          MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.ssm_parameter', '/roboshop/mysql/root_pass', region='us-east-1') }}"
+
+    - name: fetch all the params in a root branch 
+      ansible.builtin.debug: 
+        msg: "{{ lookup('amazon.aws.ssm_parameter', '/roboshop/', bypath=true, recursive=true, region='us-east-1')}}"
+      
+    - name: fetch all the params in a root branch 
+      ansible.builtin.set_fact: 
+        ssm_params: "{{ lookup('amazon.aws.ssm_parameter', '/roboshop/', bypath=true, recursive=true, region='us-east-1')}}"
+    
+    - name: print the user password 
+      ansible.builtin.debug: 
+        msg: 
+          user_name: "{{ssm_params['/roboshop/servers/login/user_name']}}"
+          user_pasword: "{{ssm_params['/roboshop/servers/login/password']}}"

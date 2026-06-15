@@ -1,0 +1,24 @@
+- name: ansible connecting with private key file 
+  hosts: mainserver
+  gather_facts: false
+  connection: ssh
+  vars: 
+    ansible_python_interpreter: /usr/bin/python3
+    # ansible_user: ansible
+    # private_key_file: /home/devarshi_balu/.ssh/keys/deva-aws.pem
+  tasks:
+    - name: id of the user
+      ansible.builtin.command: id
+      register: hello_command
+
+    - name: debug the variable 
+      ansible.builtin.debug: 
+        var: hello_command
+
+    - name: create a file 
+      ansible.builtin.command: touch /home/ansible/tthis_is_ansible_file
+      register: file_command
+
+    - name: debug the file command 
+      ansible.builtin.debug: 
+        var: file_command

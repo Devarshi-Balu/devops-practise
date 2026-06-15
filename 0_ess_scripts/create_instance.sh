@@ -38,7 +38,7 @@ if [[ -z "$PUBLIC_IP" || "$PUBLIC_IP" == "None" ]]; then
 fi
 
 record="$1.devarshi.live"
-echo "updating the dns record with the given instance_name: "
+echo "updating the dns record with the given instance_name: $1, record_name: $record"
 
 aws route53 change-resource-record-sets \
   --hosted-zone-id $ZONE_ID \
@@ -54,7 +54,7 @@ aws route53 change-resource-record-sets \
                                     ResourceRecordSet: {
                                         Name: $record,
                                         Type: "A",
-                                        TTL: 300,
+                                        TTL: 1,
                                         ResourceRecords: [
                                         {
                                             Value: $ip
