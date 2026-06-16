@@ -1,0 +1,94 @@
+[
+  {
+    "alias": [],
+    "allow_overwrite": null,
+    "cidr_routing_policy": [],
+    "failover_routing_policy": [],
+    "fqdn": "mongodb.rb.devarshi.live",
+    "geolocation_routing_policy": [],
+    "geoproximity_routing_policy": [],
+    "health_check_id": "",
+    "id": "Z06569691EDOCEFWDOVQV_mongodb.rb.devarshi.live_A",
+    "latency_routing_policy": [],
+    "multivalue_answer_routing_policy": false,
+    "name": "mongodb.rb.devarshi.live",
+    "records": [
+      "172.31.28.85"
+    ],
+    "set_identifier": "",
+    "timeouts": null,
+    "ttl": 1,
+    "type": "A",
+    "weighted_routing_policy": [],
+    "zone_id": "Z06569691EDOCEFWDOVQV"
+  },
+  {
+    "alias": [],
+    "allow_overwrite": null,
+    "cidr_routing_policy": [],
+    "failover_routing_policy": [],
+    "fqdn": "redis.rb.devarshi.live",
+    "geolocation_routing_policy": [],
+    "geoproximity_routing_policy": [],
+    "health_check_id": "",
+    "id": "Z06569691EDOCEFWDOVQV_redis.rb.devarshi.live_A",
+    "latency_routing_policy": [],
+    "multivalue_answer_routing_policy": false,
+    "name": "redis.rb.devarshi.live",
+    "records": [
+      "172.31.17.81"
+    ],
+    "set_identifier": "",
+    "timeouts": null,
+    "ttl": 1,
+    "type": "A",
+    "weighted_routing_policy": [],
+    "zone_id": "Z06569691EDOCEFWDOVQV"
+  },
+  {
+    "alias": [],
+    "allow_overwrite": null,
+    "cidr_routing_policy": [],
+    "failover_routing_policy": [],
+    "fqdn": "mysql.rb.devarshi.live",
+    "geolocation_routing_policy": [],
+    "geoproximity_routing_policy": [],
+    "health_check_id": "",
+    "id": "Z06569691EDOCEFWDOVQV_mysql.rb.devarshi.live_A",
+    "latency_routing_policy": [],
+    "multivalue_answer_routing_policy": false,
+    "name": "mysql.rb.devarshi.live",
+    "records": [
+      "172.31.28.189"
+    ],
+    "set_identifier": "",
+    "timeouts": null,
+    "ttl": 1,
+    "type": "A",
+    "weighted_routing_policy": [],
+    "zone_id": "Z06569691EDOCEFWDOVQV"
+  },
+  {
+    "alias": [],
+    "allow_overwrite": null,
+    "cidr_routing_policy": [],
+    "failover_routing_policy": [],
+    "fqdn": "frontend.rb.devarshi.live",
+    "geolocation_routing_policy": [],
+    "geoproximity_routing_policy": [],
+    "health_check_id": "",
+    "id": "Z06569691EDOCEFWDOVQV_frontend.rb.devarshi.live_A",
+    "latency_routing_policy": [],
+    "multivalue_answer_routing_policy": false,
+    "name": "frontend.rb.devarshi.live",
+    "records": [
+      "172.31.25.202"
+    ],
+    "set_identifier": "",
+    "timeouts": null,
+    "ttl": 1,
+    "type": "A",
+    "weighted_routing_policy": [],
+    "zone_id": "Z06569691EDOCEFWDOVQV"
+  }
+]
