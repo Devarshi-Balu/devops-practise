@@ -7,6 +7,7 @@ variable "environment" {
     default = "dev"
 }
 
+
 variable "ec2_tags" {
     type = map
     default = {
