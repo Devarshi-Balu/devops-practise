@@ -1,0 +1,4 @@
+HI there this is Devarshi Balu
+Here is the public ip of instance
+public_ip = 54.90.70.10
+instace created succesfully
