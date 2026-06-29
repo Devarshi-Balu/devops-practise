@@ -11,7 +11,7 @@ variable "servers" {
                     contains(local.valid_environments, lower(server.env))    
                 ])
 
-        error_message = "invalid environment" 
+        error_message = "invalid environment specified for one of the servers" 
     }
 }
 

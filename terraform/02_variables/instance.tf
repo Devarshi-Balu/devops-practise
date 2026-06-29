@@ -13,8 +13,8 @@ resource "aws_instance" "mainserver" {
 }
 
 
-resource "aws_security_group" "allow_tf" {
-  name = "allow-all-terraform-change-2" # this is the security-group-name -- display on the main page -- security-groups "value"
+resource "aws_security_group" "allow_tf"{
+  name = "allow-all-terraform-change" # this is the security-group-name -- display on the main page -- security-groups "value"
   description = "terraform security group allowing the connection on all ports"
 
   ingress {

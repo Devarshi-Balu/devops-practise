@@ -9,11 +9,10 @@ output "instance_public_ips" {
 
 resource "local_file" "instances_json_file" {
     filename = "${path.module}/instances.json"
-    content  = jsonencode(aws_instance.example)
+    content  = indent(2, jsonencode(aws_instance.example))
 }
-
 
 resource "local_file" "route53json" {
     filename = "${path.module}/dns_records.json"
-    content = jsonencode(aws_route53_record.roboshop_records_update)
+    content = indent(2, jsonencode(aws_route53_record.roboshop_records_update))
 }

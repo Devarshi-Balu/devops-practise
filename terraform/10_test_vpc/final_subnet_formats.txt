@@ -1,0 +1,38 @@
+{
+  "roboshop-private-backend-us-east-1a" = {
+    "availability_zone" = "us-east-1a"
+    "cidr_block" = "10.0.20.0/24"
+    "private" = true
+    "vpc_id" = "vpc-01c882a9dd93a9969"
+  }
+  "roboshop-private-backend-us-east-1b" = {
+    "availability_zone" = "us-east-1b"
+    "cidr_block" = "10.0.21.0/24"
+    "private" = true
+    "vpc_id" = "vpc-01c882a9dd93a9969"
+  }
+  "roboshop-private-database-us-east-1a" = {
+    "availability_zone" = "us-east-1a"
+    "cidr_block" = "10.0.30.0/24"
+    "private" = true
+    "vpc_id" = "vpc-01c882a9dd93a9969"
+  }
+  "roboshop-private-database-us-east-1b" = {
+    "availability_zone" = "us-east-1b"
+    "cidr_block" = "10.0.31.0/24"
+    "private" = true
+    "vpc_id" = "vpc-01c882a9dd93a9969"
+  }
+  "roboshop-public-us-east-1a" = {
+    "availability_zone" = "us-east-1a"
+    "cidr_block" = "10.0.10.0/24"
+    "private" = false
+    "vpc_id" = "vpc-01c882a9dd93a9969"
+  }
+  "roboshop-public-us-east-1b" = {
+    "availability_zone" = "us-east-1b"
+    "cidr_block" = "10.0.11.0/24"
+    "private" = false
+    "vpc_id" = "vpc-01c882a9dd93a9969"
+  }
+}
