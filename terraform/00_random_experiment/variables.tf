@@ -5,7 +5,7 @@ variable "region" {
 
 variable "number_of_availability_zones"{
     type = number 
-    default = 2
+    default = 4
 }
 
 variable "environment" {

@@ -1,20 +1,23 @@
-output "vpc_id" {
-    value = aws_vpc.roboshop.id
+output "keys_function"{
+    value = values({
+        key1 = "value1"
+        key2 = "value2"
+        key3 = "value3"
+    })
 }
 
-resource "local_file" "output_of_vpc_creation" {
-    filename = "${path.module}/vpc_output.json"
-    content = indent(2, jsonencode(aws_vpc.roboshop))
+output "public_subnets"{
+    value = local.public_subnets
 }
 
-output availablity_zones_indexing {
-    value = {
-        for zone in local.availability_zones_roboshop: 
-            zone => index(local.availability_zones_roboshop, zone)
-    }
+output "private_subnets"{
+    value = local.private_subnets
 }
 
-
-output final_subnets {
+output "subnets"{
     value = local.subnets
+}
+
+output "vpc_details" {
+    value = aws_vpc.main  
 }
