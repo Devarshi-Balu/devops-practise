@@ -12,12 +12,12 @@ lvcreate -L 20G -n lv_data vg_storage
 lvcreate -L 20G -n lv_backup vg_storage
 lvcreate -L 20G -n lv_deva vg_storage
 
-#lv extend -r ==> automatically resize the file system
+# lv extend -r ==> automatically resize the file system
 
 # make the below entries /etc/fstab
-/dev/vg_storage/lv_deva /deva xfs  defaults,nofail   0 2
-/dev/vg_storage/lv_backup /backup xfs  defaults,nofail   0 2
-/dev/vg_storage/lv_data /data xfs  defaults,nofail   0 2
+/dev/vg_storage/lv_deva     /deva   xfs  defaults,nofail   0 2
+/dev/vg_storage/lv_backup   /backup xfs  defaults,nofail   0 2
+/dev/vg_storage/lv_data     /data   xfs  defaults,nofail   0 2
 
 
 # verify using the below commands --- < run as sudo user > 
