@@ -15,7 +15,7 @@ read -r INSTANCE_ID PRIVATE_IP < <(
         --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$1}]"\
         --count 1 \
         --query "Instances[].[InstanceId, PrivateIpAddress]" \
-        --user-data "file://$(cygpath -w ${script_dir}/change_pass.sh)" \
+        --user-data "fileb://$(cygpath -w ${script_dir}/change_pass.sh)" \
         --output text 
 )
 

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#install git 
+dnf install git -y 
+
 # Set password
 echo "ec2-user:DevOps321" | chpasswd
 
@@ -22,8 +25,10 @@ EOF
 
 # Create prompt script
 cat <<'EOF' > /home/ec2-user/.bashrc.d/terminal_prompt.sh
-# Load git prompt if available
-if [ -f /usr/lib/git-core/git-sh-prompt ]; then
+# Load git prompt from RedHat/Amazon Linux OR Ubuntu/Debian locations
+if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
+    source /usr/share/git-core/contrib/completion/git-prompt.sh
+elif [ -f /usr/lib/git-core/git-sh-prompt ]; then
     source /usr/lib/git-core/git-sh-prompt
 fi
 

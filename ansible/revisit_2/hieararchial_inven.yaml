@@ -1,0 +1,70 @@
+
+#        all
+#        │
+#        ├── production
+#        │   ├── web
+#        │   │   ├── web1
+#        │   │   ├── web2
+#        │   │   └── web3
+#        │   │
+#        │   ├── api
+#        │   │   ├── api1
+#        │   │   └── api2
+#        │   │
+#        │   └── db
+#        │       ├── db1
+#        │       └── db2
+#        │
+#        └── staging
+#            ├── web
+#            │   ├── web-stage1
+#            │   └── web-stage2
+#            │
+#            └── db
+#                └── db-stage1
+
+
+all: 
+  children: 
+    production: 
+      children:   
+        web: 
+          hosts: 
+            web1: 
+            web2: 
+            web3: 
+            web4: 
+        api: 
+          hosts: 
+            api1: 
+            api2: 
+            api3: 
+        db: 
+          hosts: 
+            db1: 
+            db2: 
+            db3: 
+    staging: 
+      children: 
+        web: 
+          hosts: 
+            web10: 
+            web20: 
+            web30: 
+            web40: 
+        api: 
+          hosts: 
+            api01: 
+            api02: 
+            api03: 
+        db: 
+          hosts: 
+            db10: 
+            db20: 
+            db30: 
+
+  hosts:   
+    host1: 
+    host2: 
+
+

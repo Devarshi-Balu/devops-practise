@@ -1,0 +1,32 @@
+plugin: amazon.aws.aws_ec2
+regions: 
+  - us-east-1
+
+# keyed_groups:
+#   - key: ec2_tags.Name
+#     prefix: name
+
+filters:
+  instance-state-name: running
+
+
+keyed_groups: 
+  - key: ec2_tags.Role
+    prefix: group
+  
+  - key: ec2_tags.Environment
+
+
+hostnames:
+  - tag:Name
+  - instance-id
+  - private-ip-address
+
+compose:
+  ansible_host: public_ip_address
+  ansible_user: "'ec2-user'"
+  environment: ec2_tags.Environment
+  application: ec2_tags.Application
+  owner: ec2_tags.Owner
+  aws_region: placement.region
+  az: placement.availability_zone
